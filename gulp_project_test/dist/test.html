@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+ <header>
+<h1>This is the index page</h1>
+</header>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Vila Lucia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<body>
+	<header>
+	<img src="slike/logo.png"/>
+	 {% block content %} {% endblock %}
+	</header>
+	<div id="lanbar">
+	<p>Language: <a href="?lang=eng"><img src="slike/eng.png"/>ENG</a><a href="?lang=hrv"><img src="slike/hrv.png"/>HRV</a> <a href="?lang=ita"><img src="slike/ita.gif"/>ITA</a> </p>
+	<?php 
+	if (isset($_GET['lang'])){
+	
+	}
+	else{
+		include('php/eng.php')
+	}
+	?>
+	</div>
+	
+	<nav>
+		<ul id="nav-ul">
+			<li id="home">
+			<a  href="#">Home</a/> </li>
+			<li id="apartmani">
+			<a href="#">Apartmani</a/>
+			</li>
+			<li id="booking">
+			<a href="#" >Booking</a/></li>
+			<li id="town">
+			<a href="#">Crkvenica</a/></li>
+			<li id="contact">
+			<a href="#">Contact</a/></li>
+	</nav>
+	<div id="content">
+		<img src="slike/dramalj.jpg"/>
+		<h1>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</h1> </br> <hr> </br><p> Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+	
+	</div>
+	<div id="footer">
+		<p>Villa Lucija - apartmani Crkvenica/Dramalj</p>
+	 </div>
+</body>
+
+</html>
