@@ -1,0 +1,17 @@
+$min-mobile-width: 320px;
+$max-s-mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+
+@mixin s-phone {
+  @media (min-width: #{$min-mobile-width }) and (max-width: #{$max-s-mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin l-phone {
+  @media (min-width: #{$max-s-mobile-width }) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}

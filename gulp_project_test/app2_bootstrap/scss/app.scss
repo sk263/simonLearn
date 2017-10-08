@@ -2,6 +2,7 @@
 	00_settings
 */
 @import "app/03_base/b-h1";
+@import "app/03_base/b-img";
 @import "app/00_settings/colors";
 
 
@@ -10,9 +11,28 @@
 */
 @import "app/08_vendor/bootstrap";
 
+ /*
+	01_tools
+ */
+@import "app/01_tools/padding-mixin";
+
+
+/*
+	04_components
+*/
+@import "app/04_components/c-navLinks";
+@import "app/04_components/c-moreBtn";
 
 /*
 	05_objects
 */
-@import "app/05_objects/o-special_offers";
 @import "app/05_objects/o-unitCard";
+@import "app/05_objects/o-bottomWrapper";
+
+
+
+/*
+	07_trumps
+*/
+@import "app/07_trumps/t-colors";
+@import "app/07_trumps/t-flex";

@@ -1,0 +1,16 @@
+@import "../01_tools/media";
+
+.c_moreBtn {
+	width: 300px;
+	@include s-phone {
+		width: 200px;
+	}
+	height: 40px;
+	box-sizing: content-box;
+	border: 2px solid blue;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	background-color: white;
+	color: blue;
+}
+

@@ -1,0 +1,7 @@
+@mixin padding-bottom($padding) {
+    padding-bottom: $padding
+  }
+
+.pb-2px{
+	@include padding-bottom(2px);
+}
